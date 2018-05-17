@@ -32,6 +32,8 @@ cuda下载地址：https://developer.nvidia.com/cuda-downloads
 
 sudo dpkg -i cuda-repo-ubuntu1604-9-0-local_9.0.176-1_amd64.deb //此处的文件名要换成下载下来的文件名,这个操作会在/etc/apt/source.list.d/下面添加一个cuda开头的源文件，里面是cuda安装文件的地址。如果之前安装了其他的版本需要将其他版本的source文件删除掉。
 
+sudo apt-key add /var/cuda-repo-9-0-local/7fa2af80.pub	//根据提示进行操作
+
 sudo apt-get update
 
 sudo apt-get install cuda //也可以带版本 cuda-9-0，安装好后会在/usr/local目录下出现cuda和cuda-9.0两个文件夹，两个里面是一样的。主要用cuda文件夹。
